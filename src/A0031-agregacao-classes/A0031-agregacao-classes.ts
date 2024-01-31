@@ -46,4 +46,5 @@ console.log();
 console.log(shoppingCart.amount());
 
 console.log();
+
 console.log(shoppingCart.total());
