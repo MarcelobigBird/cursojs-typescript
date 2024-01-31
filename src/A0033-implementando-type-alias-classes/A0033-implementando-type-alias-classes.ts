@@ -10,6 +10,8 @@ type TypeFirstnameComplete = {
   firstnameComplete(): string;
 };
 
+// Ou pode usar um type: type Type Person = { firstname: string, lastname: string, firstnameComplete(): string}
+
 export class Person implements TypeFirstname, TypeLastname, TypeFirstnameComplete {
   constructor(
     public firstname: string,

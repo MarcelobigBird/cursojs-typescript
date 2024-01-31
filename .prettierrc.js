@@ -4,7 +4,7 @@ module.exports = {
   endOfLine: 'lf',
   htmlWhitespaceSensitivity: 'ignore',
   insertPragma: false,
-  printWidth: 110,
+  printWidth: 120,
   proseWrap: 'always',
   quoteProps: 'as-needed',
   requirePragma: false,
