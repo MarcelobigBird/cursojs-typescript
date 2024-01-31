@@ -2,7 +2,7 @@ export class Person {
   constructor(
     public readonly firstname: string,
     public readonly lastname: string,
-    private readonly age: number,
+    protected readonly age: number,
     protected readonly cpf: string,
   ) {}
 
