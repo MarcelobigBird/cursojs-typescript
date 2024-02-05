@@ -18,7 +18,7 @@ const person: Person = {
   firstname: 'Luiz',
   lastname: 'Miranda',
   address: ['Av. Brasil'],
-  age: 42,
+  age: 42, // opcional
 };
 
 person.address.push('Rua merino', 'Rua da cavalgada');
