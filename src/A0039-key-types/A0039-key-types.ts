@@ -1,18 +1,18 @@
-type Veiculo = {
+type Vehicle = {
   marca: string;
   ano: number;
 };
 
 type Car = {
-  brand: Veiculo['marca'];
-  year: Veiculo['ano'];
+  brand: Vehicle['marca'];
+  year: Vehicle['ano'];
   name: string;
 };
 
-const carro: Car = {
+const car: Car = {
   brand: 'Ford',
   year: 2020,
   name: 'F14000',
 };
 
-console.log(carro);
+console.log(car);
