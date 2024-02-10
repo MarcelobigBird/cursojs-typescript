@@ -5,9 +5,15 @@ export class Person<T, U> {
   ) {}
 }
 
+const person1 = new Person('Marcelo', 40);
+const person2 = new Person('Luiz', 45);
+const person3 = new Person('Leonardo', 42);
+console.log(person1, person2, person3);
+
+console.log();
 export class Stack<T> {
   private counter = 0;
-  private elements: { [k: number]: T } = {};
+  private elements: { [E: number]: T } = {};
 
   public push(element: T): void {
     this.elements[this.counter] = element;
@@ -61,3 +67,6 @@ stack.push('Daniel');
 
 console.log();
 stack.showStack();
+
+console.log();
+console.dir(stack);
