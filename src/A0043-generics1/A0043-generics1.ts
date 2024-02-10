@@ -16,11 +16,10 @@ function myFilterComGeneric<T>(array: T[], callbackFn: FilterCallback<T>): T[] {
 const arrayNumber: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // com generic não precisa fazer teste
-
 const arrayFilteredGeneric = myFilterComGeneric(arrayNumber, (value) => value < 5);
-
 console.log('Filter usando generic');
 console.log(arrayFilteredGeneric);
+
 console.log();
 
 // usei o filter nativo do javascript
@@ -48,7 +47,6 @@ function meuFilterSemGeneric(array: unknown[], callbackFn: Filter) {
 const arrayNumber1: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // sem generic precisa fazer teste
-
 const arrayFilteredSemGeneric = meuFilterSemGeneric(arrayNumber1, (value) => {
   if (typeof value === 'number') return value > 5;
 
@@ -109,5 +107,5 @@ const arrayNumero2: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const arrayFiltradoPrototype1 = arrayNumero2.myFilterComPrototype((valor) => valor < 5);
 
-console.log('Filtro vinculado ao protótipo usando type');
+console.log('Filtro vinculado ao protótipo usando type e interface com generic');
 console.log(arrayFiltradoPrototype1);
