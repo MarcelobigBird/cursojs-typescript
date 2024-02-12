@@ -12,6 +12,7 @@ const address = {
   number: 37,
   neighborhood: 'Jd. Julieta',
   city: 'São Paulo',
+  state: 'São Paulo',
 };
 
 const unity = joinObject(person, address);
