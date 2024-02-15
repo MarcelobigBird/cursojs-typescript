@@ -63,11 +63,16 @@ const votation2 = new Votation('Qual sua cor favorita?');
 votation2.addVotationOption({ option: 'Red', numberOfVotes: 0 });
 votation2.addVotationOption({ option: 'Green', numberOfVotes: 0 });
 votation2.addVotationOption({ option: 'Blue', numberOfVotes: 0 });
+votation2.addVotationOption({ option: 'Black', numberOfVotes: 0 });
+votation2.addVotationOption({ option: 'white', numberOfVotes: 0 });
 
 votation2.vote(0);
-votation2.vote(0);
+votation2.vote(1);
+votation2.vote(3);
 votation2.vote(0);
 votation2.vote(2);
+votation2.vote(2);
+votation2.vote(4);
 
 const votationApp1 = new VotationApp();
 votationApp1.addVotation(votation2);
