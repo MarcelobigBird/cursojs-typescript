@@ -1,7 +1,9 @@
+// eslint-disable-next-line
 function decorator(classPrototype: any, name: string | symbol): any {
-  let valueProperty: any;
+  let valueProperty: any; // eslint-disable-line
   return {
     get: () => valueProperty,
+    // eslint-disable-next-line
     set: (value: any) => {
       if (typeof value === 'string') {
         return (valueProperty = value.split('').reverse().join(''));
