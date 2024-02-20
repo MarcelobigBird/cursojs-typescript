@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 function decorador(classPrototype: any, nameMethod: string, descriptor: PropertyDescriptor): PropertyDescriptor | void {
   console.log(classPrototype);
   console.log(nameMethod);
@@ -21,7 +22,7 @@ export class OnePerson {
   }
 
   @decorador
-  speek(msg: string): string {
+  public speek(msg: string): string {
     return `${this.firstname} ${this.lastname}: ${msg}`;
   }
 
