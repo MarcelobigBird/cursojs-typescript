@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // Tipo do construtor da classe
 type Constructor = new (...args: any[]) => any;
 
@@ -232,3 +234,5 @@ console.log(pessoa);
 console.log(metodo);
 console.log(metodoEstatico);
 console.log(UmaPessoa.propriedadeEstatica);
+
+/* eslint-enable */
