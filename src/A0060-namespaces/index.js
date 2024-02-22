@@ -20,6 +20,10 @@ var personNameSpace = new MyNameSpace.PersonNamespace(MyNameSpace.firstnameNames
 console.log(personNameSpace);
 console.log();
 console.log(MyNameSpace.OutroNamespace.firstNamespace);
+console.log();
+var constDoNamespace = 'Valor da const do namespace';
 /* eslint-disable @typescript-eslint/triple-slash-reference */
 /// <reference path="module/module.ts" />
 console.log(MyNameSpace.firstnameNamespace);
+console.log();
+console.log(constDoNamespace);

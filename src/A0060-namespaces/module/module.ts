@@ -20,3 +20,6 @@ console.log(personNameSpace);
 
 console.log();
 console.log(MyNameSpace.OutroNamespace.firstNamespace);
+
+console.log();
+const constDoNamespace = 'Valor da const do namespace';
